@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>sesmi</title>
+  <meta name="description" content="SESMI — Estamos trabajando en ello. Pronto nos vemos." />
+
+  <!-- Space Grotesk (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #fbf7ef;   /* blanco crema */
+      --text: #111111; /* casi negro */
+      --muted: rgba(17,17,17,.55);
+    }
+
+    html, body { height: 100%; }
+
+    body{
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      padding: 32px 18px;
+    }
+
+    .wrap{
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand{
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    img{
+      width: min(420px, 92vw);
+      height: auto;
+      display: block;
+    }
+
+    .headline{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.3;
+      margin-top: 2px;
+    }
+
+    .sub{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.35;
+      color: var(--muted);
+      margin-top: -6px;
+    }
+
+    .footer{
+      margin-top: 18px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .footer a{
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(17,17,17,.25);
+    }
+    .footer a:hover{
+      border-bottom-color: rgba(17,17,17,.45);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="brand">sesmi</div>
+
+    <!-- Cambia el nombre si tu GIF se llama distinto -->
+    <img src="coming-soon.gif" alt="sesmi — en construcción" />
+
+    <div class="headline">estamos trabajando en ello</div>
+    <div class="sub">nos vemos pronto</div>
+
+    <div class="footer">
+      contacto <a href="mailto:mrandreipop@gmail.com">mrandreipop@gmail.com</a>
+    </div>
+  </main>
+</body>
+</html>
